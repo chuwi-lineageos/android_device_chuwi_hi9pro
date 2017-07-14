@@ -31,6 +31,8 @@ on fs
     mount_all /vendor/etc/fstab.mt6797 ${ro.mtkrc.path}multi_init.rc
     write /proc/bootprof "INIT:Mount_END"
 
+    setprop sys.usb.ffs.aio_compat 1
+
 on post-fs
     chown system system /protect_f
     chmod 0770 /protect_f
