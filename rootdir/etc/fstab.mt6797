@@ -1,7 +1,7 @@
 #<src>                                                          <mnt_point>       <type>  <mnt_flags and options>                                      <fs_mgr_flags>
 
 # Only for recovery, kernel mounts /system and /vendor early
-/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system    /                 ext4    ro                                                           wait,slotselect,recoveryonly
+/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system    /system                 ext4    ro                                                           wait,slotselect,recoveryonly
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/vendor    /vendor           ext4    ro                                                           wait,slotselect,recoveryonly
 
 /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/boot      /boot             emmc    defaults                                                     defaults

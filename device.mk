@@ -70,12 +70,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstagefright_omx_shim
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/CHUWI/Hi9Air/Hi9Air-vendor.mk)
+$(call inherit-product, vendor/chuwi/hi9pro/hi9pro-vendor.mk)

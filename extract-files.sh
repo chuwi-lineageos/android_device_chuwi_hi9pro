@@ -3,8 +3,8 @@
 
 set -e
 
-DEVICE=Hi9Air
-VENDOR=CHUWI
+DEVICE=hi9pro
+VENDOR=chuwi
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
