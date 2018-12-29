@@ -1,9 +1,11 @@
 # Copyright (C) 2018 The LineageOS Project
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PATH := device/chuwi/hi9pro
+
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
 endif
 
 # Boot control
@@ -33,8 +35,8 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += vndk_package
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vndk-26/ld.config.compat.txt:system/etc/ld.config.compat.txt \
-    $(LOCAL_PATH)/vndk-26/vndk-compat.rc:system/etc/init/vndk-compat.rc
+    $(DEVICE_PATH)/vndk-26/ld.config.compat.txt:system/etc/ld.config.compat.txt \
+    $(DEVICE_PATH)/vndk-26/vndk-compat.rc:system/etc/init/vndk-compat.rc
 
 # SP-NDK
 PRODUCT_PACKAGES += \
@@ -42,7 +44,7 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
+    $(DEVICE_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
 
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -58,7 +60,7 @@ PRODUCT_PACKAGES += \
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio_keys.kl:system/usr/keylayout/gpio_keys.kl
+    $(DEVICE_PATH)/keylayout/gpio_keys.kl:system/usr/keylayout/gpio_keys.kl
 
 # Update engine
 PRODUCT_PACKAGES += \
@@ -71,7 +73,7 @@ PRODUCT_PACKAGES += \
     libstagefright_omx_shim
 
 # Properties
--include $(LOCAL_PATH)/system_prop.mk
+include $(DEVICE_PATH)/system_prop.mk
 
 # Call proprietary blob setup
 $(call inherit-product, vendor/chuwi/hi9pro/hi9pro-vendor.mk)
