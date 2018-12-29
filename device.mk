@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 # HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
 
