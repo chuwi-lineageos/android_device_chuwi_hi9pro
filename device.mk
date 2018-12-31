@@ -30,7 +30,11 @@ TARGET_SCREEN_WIDTH := 1600
 # Init
 PRODUCT_PACKAGES += \
     init.mt6797.rc \
-    fstab.mt6797
+    fstab.mt6797 \
+    ueventd.rc
+
+PRODUCT_COPY_FILES += \
+    device/chuwi/hi9pro/rootdir/ueventd.rc:root/ueventd.rc
 
 # VNDK
 PRODUCT_PACKAGES += vndk_package
