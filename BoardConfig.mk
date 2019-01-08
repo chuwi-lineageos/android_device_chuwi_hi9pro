@@ -64,9 +64,6 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
-# Vendor
-TARGET_COPY_OUT_VENDOR := vendor
-
 # Enable 64-bits binder
 TARGET_USES_64_BIT_BINDER := true
 
