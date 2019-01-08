@@ -24,10 +24,6 @@ TARGET_SCREEN_WIDTH := 1600
 PRODUCT_PACKAGES += \
     init.mt6797.rc \
     fstab.mt6797 \
-    ueventd.rc
-
-PRODUCT_COPY_FILES += \
-    device/chuwi/hi9pro/rootdir/ueventd.rc:root/ueventd.rc
 
 # VNDK
 PRODUCT_PACKAGES += vndk_package
@@ -40,7 +36,6 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
 
