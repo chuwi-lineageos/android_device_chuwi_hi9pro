@@ -8,13 +8,6 @@ ifneq ($(findstring lineage, $(TARGET_PRODUCT)),)
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
 endif
 
-# Boot control
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
-#PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-#    bootctrl.mt6797
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
