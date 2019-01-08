@@ -61,7 +61,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6797
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
-BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Enable 64-bits binder
