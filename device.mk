@@ -18,8 +18,43 @@ TARGET_SCREEN_WIDTH := 1600
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6797.rc \
+    aee_aed64.rc \
+    android.hidl.allocator@1.0-service.rc \
+    atcid.rc atrace.rc \
+    audiocmdservice_atci.rc \
+    audioserver.rc \
+    batterywarning.rc \
+    bootlogoupdater.rc \
+    bootstat.rc \
+    cameraserver.rc \
+    drmserver.rc \
+    dumpstate.rc \
+    emdlogger1.rc \
+    emdlogger2.rc \
+    emdlogger3.rc \
+    emdlogger5.rc \
     fstab.mt6797 \
+    gatekeeperd.rc \
+    ged_srv.rc \
+    hwservicemanager.rc \
+    init.mt6797.rc \
+    init.thermald.rc \
+    init.vtservice.rc \
+    installd.rc \
+    keystore.rc \
+    kpoc_charger.rc \
+    lmkd.rc \
+    logd.rc \
+    md_monitor.rc \
+    mdlogger.rc \
+    mdnsd.rc \
+    mediadrmserver.rc \
+    mediaextractor.rc \
+    mediametrics.rc \
+    mediaserver.rc \
+    mobile_log_d.rc \
+    mtpd.rc \
+    netd.rc \
 
 # VNDK
 PRODUCT_PACKAGES += vndk_package
