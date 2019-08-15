@@ -1,4 +1,0 @@
-service PPLAgent /system/bin/ppl_agent
-    class main
-    user root
-    group system cache

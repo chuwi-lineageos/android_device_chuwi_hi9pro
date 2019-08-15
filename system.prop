@@ -1,0 +1,6 @@
+ro.product.brand=CHUWI
+ro.product.name=Hi9Pro
+ro.product.device=Hi9Pro
+ro.product.mod_device=Hi9Pro
+ro.build.product=Hi9Pro
+ro.treble.enabled=true

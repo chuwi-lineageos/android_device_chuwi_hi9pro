@@ -1,0 +1,2 @@
+add_lunch_combo omni_hi9plus-eng
+add_lunch_combo omni_hi9plus-userdebug
