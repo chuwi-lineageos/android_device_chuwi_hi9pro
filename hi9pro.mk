@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
     device/chuwi/hi9pro/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := hi9pro
+PRODUCT_DEVICE := Hi9Pro
 PRODUCT_NAME := hi9pro
 PRODUCT_BRAND := chuwi
 PRODUCT_MODEL := hi9pro
