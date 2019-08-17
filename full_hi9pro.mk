@@ -6,12 +6,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/chuwi/hi9pro/device.mk)
+$(call inherit-product, device/chuwi/Hi9Pro/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Hi9Pro
-PRODUCT_NAME := lineage_hi9pro
-PRODUCT_MODEL := hi9pro
+PRODUCT_NAME := lineage_Hi9Pro
+PRODUCT_MODEL := Hi9Pro
 PRODUCT_BRAND := chuwi
 PRODUCT_MANUFACTURER := chuwi
 
