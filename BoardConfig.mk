@@ -1,6 +1,6 @@
 # Copyright (C) 2018 The LineageOS Project
 
-DEVICE_PATH := device/chuwi/Hi9Pro
+DEVICE_PATH := device/chuwi/hi9pro
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6797
@@ -22,8 +22,8 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-#TARGET_KERNEL_SOURCE := kernel/chuwi/Hi9Pro
-#TARGET_KERNEL_CONFIG := Hi9Pro_defconfig
+#TARGET_KERNEL_SOURCE := kernel/chuwi/hi9pro
+#TARGET_KERNEL_CONFIG := hi9pro_defconfig
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage
 
 # Boot image
@@ -97,4 +97,4 @@ TARGET_LD_SHIM_LIBS := \
     /system/lib64/vndk-compat/libstagefright_omx.so|/system/lib64/libstagefright_omx_shim.so
 
 # Inherit from the proprietary version
--include vendor/chuwi/Hi9Pro/BoardConfigVendor.mk
+-include vendor/chuwi/hi9pro/BoardConfigVendor.mk

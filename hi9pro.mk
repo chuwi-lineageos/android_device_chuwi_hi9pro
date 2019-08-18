@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := Hi9Pro
+PRODUCT_RELEASE_NAME := hi9pro
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,14 +23,14 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/chuwi/config/common.mk)
 
 PRODUCT_COPY_FILES += \
-    device/chuwi/Hi9Pro/recovery/root/init.recovery.mt6797.rc:recovery/root/init.recovery.mt6797.rc \
-    device/chuwi/Hi9Pro/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/chuwi/hi9pro/recovery/root/init.recovery.mt6797.rc:recovery/root/init.recovery.mt6797.rc \
+    device/chuwi/hi9pro/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := Hi9Pro
-PRODUCT_NAME := Hi9Pro
+PRODUCT_DEVICE := hi9pro
+PRODUCT_NAME := hi9pro
 PRODUCT_BRAND := chuwi
-PRODUCT_MODEL := Hi9Pro
+PRODUCT_MODEL := hi9pro
 PRODUCT_MANUFACTURER := chuwi
 
 # enable stock zip packages flash

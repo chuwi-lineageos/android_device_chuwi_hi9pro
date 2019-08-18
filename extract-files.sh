@@ -3,7 +3,7 @@
 
 set -e
 
-DEVICE=Hi9Pro
+DEVICE=hi9pro
 VENDOR=chuwi
 
 # Load extractutils and do some sanity checks

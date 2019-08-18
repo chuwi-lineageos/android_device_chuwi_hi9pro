@@ -2,7 +2,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),Hi9Pro)
+ifeq ($(TARGET_DEVICE),hi9pro)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

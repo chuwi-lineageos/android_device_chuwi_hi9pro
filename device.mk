@@ -1,6 +1,6 @@
 # Copyright (C) 2018 The LineageOS Project
 
-DEVICE_PATH := device/chuwi/Hi9Pro
+DEVICE_PATH := device/chuwi/hi9pro
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
@@ -94,4 +94,4 @@ PRODUCT_PACKAGES += \
 include $(DEVICE_PATH)/system_prop.mk
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/chuwi/Hi9Pro/Hi9Pro-vendor.mk)
+$(call inherit-product, vendor/chuwi/hi9pro/hi9pro-vendor.mk)
